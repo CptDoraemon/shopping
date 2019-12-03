@@ -1,0 +1,111 @@
+.list-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.list-item-wrapper {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    margin: 20px;
+    color: #FFF;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.list-item-wrapper:hover {
+    box-shadow: 0 0 15px 10px rgb(200, 200, 200);
+}
+
+.list-item-row-wrapper {
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+.list-item-name {
+    height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.list-item-image {
+    height: 130px;
+    border: 1px beige dashed;
+}
+
+.list-item-description {
+    height: 30px;
+}
+
+.list-item-quantity {
+    height: 30px;
+}
+
+.item-quantity-modifier-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
+
+.item-quantity-modifier-column-half, .item-quantity-modifier-column-quarter {
+    height: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-quantity-modifier-column-half {
+    width: 50%;
+}
+
+.item-quantity-modifier-column-quarter {
+    width: 25%;
+}
+
+.item-quantity-modifier-subtract, .item-quantity-modifier-add {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px white solid;
+    text-align: center;
+    user-select: none;
+    /*margin: 0 10px;*/
+}
+
+.item-quantity-modifier-subtract:hover {
+    background-color: #FF5722;
+    cursor: pointer;
+}
+
+.item-quantity-modifier-add:hover {
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+.item-quantity-modifier-unit {
+    padding-left: 5px;
+}
+
+.item-quantity-modifier-input {
+    height: 30px;
+    border: none;
+    width: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    padding: 0 4px;
+    margin: 0;
+}
+
+.item-quantity-modifier-confirm {
+
+}
