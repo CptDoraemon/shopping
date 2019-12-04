@@ -1,2 +1,2 @@
 ## A simple shopping app
-With Redux and TypeScript.git
+With Redux and TypeScript

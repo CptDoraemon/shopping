@@ -50,7 +50,7 @@ const cartHandler = (state: Array<ProductInfoInCart> = [], action: any) => {
 
         default:
             return [...state];
-    }
+    };
 };
 
 export default cartHandler

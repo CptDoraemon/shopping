@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import Filters from "./components/filters";
 import HeaderContainer from './containers/header-container';
 import ListContainer from './containers/list-container';
+import FilterContainer from './containers/filters-container';
 
 import { getProducts } from "./actions";
+import { getCategories } from "./actions";
 import { DispatchType } from "./index";
 import { store } from "./index";
 
@@ -29,6 +30,7 @@ class App extends React.Component<AppProps, AppState> {
 
     componentDidMount() {
         this.dispatch(getProducts());
+        this.dispatch(getCategories());
     }
 
     componentDidUpdate() {
@@ -40,7 +42,7 @@ class App extends React.Component<AppProps, AppState> {
             <div className="App">
                 <HeaderContainer />
                 <div className={'app-body-wrapper'}>
-                    <Filters/>
+                    <FilterContainer />
                     <ListContainer />
                 </div>
             </div>

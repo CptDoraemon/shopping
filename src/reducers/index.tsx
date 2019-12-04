@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 import productLists from "./product-lists";
 import toggleView from "./toggle-view";
 import cartHandler from "./cartHandler";
+import categoryHandler from "./categoryHandler";
 
 export interface ProductForListing {
     category: number;
@@ -32,5 +33,6 @@ export interface StoreState {
 export default combineReducers({
     productLists: productLists,
     view: toggleView,
-    cartLists: cartHandler
+    cartLists: cartHandler,
+    category: categoryHandler
 })

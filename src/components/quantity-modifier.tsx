@@ -101,9 +101,27 @@ export default class ItemQuantityModifier extends React.Component<IProps, IState
                     <div className={'item-quantity-modifier-unit'}> { this.props.productInfo.unit } </div>
                 </div>
                 <div className={'item-quantity-modifier-column-quarter'} onClick={this.buttonHandler}>
-                    { this.props.view === viewEnum.LISTING ? 'ADD' : 'REMOVE' }
+                    <div>
+                    </div>
+                    { this.props.view === viewEnum.LISTING ? <AddButton /> : <RemoveButton /> }
                 </div>
             </div>
         )
     }
+}
+
+function AddButton() {
+    return (
+        <div className={'item-quantity-modifier-add-button'}>
+            ADD
+        </div>
+    )
+}
+
+function RemoveButton() {
+    return (
+        <div className={'item-quantity-modifier-remove-button'}>
+            REMOVE
+        </div>
+    )
 }
